@@ -1,9 +1,11 @@
-import "./styles.css";
+rotulo1.innerHTML =
+  "Escriba el numero que desea verificar si es mayor o no a 20:";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+btnverif.addEventListener("click", () => {
+  let nroDeseado: number = dato.value;
+  if (nroDeseado > 20) {
+    console.log("El número es mayor a 20: " + nroDeseado);
+  } else {
+    console.log("El número es menor o igual a 20: " + nroDeseado);
+  }
+});
